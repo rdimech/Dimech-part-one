@@ -1,0 +1,104 @@
+body {
+    background-color: #F0ECEE;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.nav-logo {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.word-em {
+    color: #FF4850;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    flex-basis: 100%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p {
+    color: #88898B;
+    font-weight: 300;
+}
+
+a {
+    color: #88898B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF4850;
+}
+
+button {
+    background-color: #FF4850;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+button:hover {
+    background-color: #CCC;
+    color: #FF4850;
+}
+
+@media screen and (min-width:768px){
+    body {
+        background-image: url("../bulldog.jpg");
+        background-size: cover;
+    }
+
+    p {
+        line-height: 1.6;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .button-a {
+        width: auto;
+        position: relative;
+        top: auto;
+        bottom: 10px;
+    }
+
+    .button-b {
+        width: auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-logo {
+        flex: 5;
+    }
+    
+    li {
+        flex: 1;
+    }
+    
+    .info-box {
+        width:45%;
+        position: absolute;
+        top:25%
+    }
+}
